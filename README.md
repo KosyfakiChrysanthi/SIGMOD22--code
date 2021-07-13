@@ -1,5 +1,5 @@
-# SIGMOD22--code
-Paper: Provenance in Temporal Interaction Networks
+# SIGMOD22--code Paper: Provenance in Temporal Interaction Networks
+
 
 Instructions for compiling and running the code
 
