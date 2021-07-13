@@ -3,7 +3,7 @@
 code 
 
 
-Instructions for compiling and running the code
+
 
 1) run make at your terminal to compile the code (compilation is done using gcc with -O3 flag)
 
@@ -17,21 +17,32 @@ src3 dest3 time3 flow3...
 
 An example graph file (graph.txt) is given in this distribution
 
-3) Running ./provenance_tin <graph file> <k for topk origin provenance OR numgroups> <Window size (for sliding prov.)> <budget for BudgetProv> <reduction for BudgetProv>
+3) Running ./provenance_tin <graph file> <method> (method arguments)
 - the following algorithms are run and their provenance information is shown at the output
-	- No Provenance (baseline)
-	- Least Recently Born
-	- Most Recently Born
-	- LIFO
-	- FIFO
-	- LIFO with path tracking
-	- Proportional (Dense Vectors)
-	- Proportional (Sparse Vectors)
-	- Proportional (From Selected Vertices) 
-	- Proportional (From Groups of Vertices)
-	- Window-based Proportional 
-	- Budget-based Proportional
+0: 	No Provenance (baseline)
+1:	Least Recently Born
+2:	Most Recently Born
+3:	LIFO
+4:	FIFO
+31:	LIFO with path tracking
+100:	Proportional (Dense Vectors)
+101:	Proportional (Sparse Vectors)
+110:	Proportional (From Selected Vertices) 
+111:	Proportional (From Groups of Vertices)
+120:	Window-based Proportional 
+121:	Budget-based Proportional
 
 Example of execution:
 make
-./provenance_tin graph.txt 2 3 3 2
+./provenance_tin graph.txt 0
+./provenance_tin graph.txt 1
+./provenance_tin graph.txt 2
+./provenance_tin graph.txt 3
+./provenance_tin graph.txt 4
+./provenance_tin graph.txt 31
+./provenance_tin graph.txt 100
+./provenance_tin graph.txt 101
+./provenance_tin graph.txt 110 2
+./provenance_tin graph.txt 111 2
+./provenance_tin graph.txt 120 3
+./provenance_tin graph.txt 121 3 2
