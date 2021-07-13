@@ -1,4 +1,6 @@
 # SIGMOD22--code
+Paper: Provenance in Temporal Interaction Networks
+
 Instructions for compiling and running the code
 
 1) run make at your terminal to compile the code (compilation is done using gcc with -O3 flag)
