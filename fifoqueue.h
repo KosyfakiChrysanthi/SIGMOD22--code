@@ -1,3 +1,5 @@
+/*Chrysanthi Kosyfaki, PhD Candidate */
+
 #ifndef __FIFOQUEUE
 #define __FIFOQUEUE
 
