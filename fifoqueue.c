@@ -1,3 +1,5 @@
+/*Chrysanthi Kosyfaki, PhD Candidate */
+
 /*implementation of a FIFO queue for buffered items*/
 /*used by provenance.c*/
 /*queue capacity is dynamic*/
