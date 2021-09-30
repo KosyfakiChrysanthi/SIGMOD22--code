@@ -1,3 +1,3 @@
-# SIGMOD22 Paper: Provenance in Temporal Interaction Networks
+# VLDB 2022 Paper Submission: Provenance in Temporal Interaction Networks
 
 
